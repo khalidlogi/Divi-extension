@@ -1,0 +1,32 @@
+React in Divi and wordpress
+
+First, make sure that you are running yarn while compiling the build : yarn-start
+
+///Example of a code to show a value from the main Class
+import React, { Component, Fragment } from 'react';
+	
+import './gallery.css';
+	
+class SimpleHeader extends Component {
+	
+ static slug = 'mykh_hello_world';
+
+  	
+ render() {
+ return (
+<Fragment>
+  <div>
+  <p>
+          {this.props.icon_color}
+        </p>
+  </div>
+      </Fragment>   
+      );
+  }
+}
+          	
+export default SimpleHeader;
+
+///////////////////////////////////////////////////Style///////////////////////////////////////////////////
+use inline style + value styles
+  <div style={{position: 'absolute', right: `${this.props.topPosition}px`, bottom: 0}}>
