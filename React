@@ -30,3 +30,26 @@ export default SimpleHeader;
 ///////////////////////////////////////////////////Style///////////////////////////////////////////////////
 use inline style + value styles
   <div style={{position: 'absolute', right: `${this.props.topPosition}px`, bottom: 0}}>
+
+```php
+import React from 'react';
+
+const buttonStyles = {
+  backgroundColor: '#4CAF50',
+  color: 'white',
+  padding: '15px 32px',
+  textAlign: 'center',
+  display: 'inline-block',
+  fontSize: '16px',
+};
+
+const Button = () => {
+  return (
+    <button style={{...buttonStyles, position: 'fixed', bottom: '42px'}}>
+      Click me
+    </button>
+  );
+};
+
+export default Button;
+```
